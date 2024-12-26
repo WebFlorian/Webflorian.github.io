@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+<title>Contact</title>
+</head>
+<body>
+	<a href="index.html">
+        <button>Retour à l'accueil</button>
+    </a>
+	<a href="realisation.html"><h1><sup>Contact</sup></h1></a>
+	<h2>Notre équipe</h2>
+	<img src="image/Contact.jpg" alt="image Contact">
+	 <h2>Formulaire de Contact</h2>
+
+    <form action="traitement_formulaire.php" method="POST">
+        <!-- Tableau de formulaire -->
+        <table>
+            <!-- Ligne pour l'Email -->
+            <tr>
+                <th>Email :</th>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+
+            <!-- Ligne pour le Téléphone -->
+            <tr>
+                <th>Téléphone :</th>
+                <td><input type="tel" id="telephone" name="telephone" required></td>
+            </tr>
+
+            <!-- Ligne pour l'Adresse -->
+            <tr>
+                <th>Adresse :</th>
+                <td><textarea id="adresse" name="adresse" rows="4" required></textarea></td>
+            </tr>
+
+            <!-- Ligne pour le bouton de soumission -->
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit" class="submit-btn">Envoyer</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
